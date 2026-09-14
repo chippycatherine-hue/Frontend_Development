@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>My food Menu</title>
+    <style>
+        body {
+            background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
+        }
+        h1{
+            text-align: center;
+            color: #333;}
+
+        h1+p {
+            background-color: #fff;
+            border: 1px solid #ccc;
+            padding: 15px;
+            margin: 10px auto;
+            width: 50%;
+            box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+        }
+        ul{padding: 0; margin-top: 20px;}
+        ul>li {
+            list-style-type: none;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin: 5px auto;
+            width: 50%;
+            box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+        }
+        ul li:nth-child(odd) {
+            background: #e0e0e0;
+            color: #333;
+        }
+        .desc{
+            color: #555;
+            margin-top: 5px;
+            font-size: 0.9em;
+            color: #666;
+        }/* first-letter - makes the first letter big and bold */
+
+.desc::first-letter {
+
+font-size: 220%;
+
+color: #e65c00;
+
+font-weight: bold;
+
+}
+
+.links { margin-top: 25px; }
+
+/* Hover Effect - links glow when mouse moves over them */
+
+a {
+
+color: #e65c00;
+
+text-decoration: none;
+
+font-size: 15px;
+
+margin: 0 12px;
+
+padding: 8px 18px;
+
+border: 2px solid #e65c00;
+
+border-radius: 8px;
+
+}
+
+a:hover {
+
+background: #e65c00;
+
+color: white;
+
+}
+
+</style>
+</head>
+<body>
+    <h1>My Food Menu</h1>
+    <p> Pic your favorite food and dig in! </p>
+
+    <ul>
+        <li>Pizza</li>
+        <li>Burger</li>
+        <li>Tacos- Chef's special</li>
+        <li>Ice Cream</li>
+        <li>Noodles</li>
+    </ul>
+
+    <p class="desc"> Every dish in the menu is made with love and loads of flavour. Try them all and findyour fovourite!</p>
+
+    <div class="links">
+        <a href="#">Order Online</a>
+        <a href="#">See More</a>
+    </div>
+</body>
+</html>
