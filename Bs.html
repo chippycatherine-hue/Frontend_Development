@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>My Hobby Cards</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Step 1 - Bootstrap CSS link -->
+     <link rel="stylesheet" 
+     href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+     <style>
+        body{
+            background-color: lightblue;
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+
+        H1{
+            color: darkgreen;
+            text-align: center;
+        }
+
+        .hobby-card {
+           text-align: center;
+            border: 1px solid darkgreen;
+            border-radius: 10px;
+            padding: 10px;
+            margin-bottom: 20px;
+            background-color: white;
+        }
+     </style>
+</head>
+<body>
+    
+    <h1>My Hobby Cards</h1>
+
+    <!-- Step 2 - container keeps the card neat and centered -->
+     <div class="container">
+     
+    <!-- Step 3 - row holds all the cards in one horizontal line -->
+     <div class="row"
+
+    < !-- Step 4 - col-12: Full width on phones
+        col-md-6: Half width on tablets
+            col-lg-4: One-third width on desktops -->
+        <div class="col-12 col-md-6 col-lg-4">
+            <div class="hobby-card">
+                <h3>Drawing</h3>
+                <p>Love scetching animals and comic characters</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-12 col-md-6 col-lg-4">
+            <div class="hobby-card">
+                <h3>Football</h3>
+                <p>play football every evening with my friends</p>
+            </div>
+        </div>
+
+    <div class="col-12 col-md-6 col-lg-4">
+            <div class="hobby-card">
+                <h3>Reading</h3>
+                <p>My favourite books are adventure stories</p>
+            </div>
+        </div>
+    </div>
+
+    < !-- Step 5 - Bootstrap JS link -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" ></script>
+     
+</body>
+</html>
