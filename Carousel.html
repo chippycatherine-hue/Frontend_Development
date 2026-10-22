@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Animal Safari</title>
+    <link rel="stylesheet" 
+    href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+    <style>
+        body{position: relative;}
+        .safari slide{height: 100vh;text-align: center; padding-top: 0; font-size: 3em; color: #fff;}
+        .slide-forest{background:darkgreen;}
+        .slide-desert{background:darkorange;}
+        .slide-ocean{background:darkblue;}
+        .section{padding: 50px 0;min-height: 100vh;}
+        #forest{background:darkgreen;}
+        #desert{background:darkorange;}
+        #ocean{background:darkblue;}    
+    </style>
+</head>
+<body data-spy="scroll" data-target="#safarinav"data-offset="0">
+
+    <!--TOPIC 1,2,3:CAROUSEL-->
+    <div id="safariCarousel" class="carousel slide" data ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#safariCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#safariCarousel" data-slide-to="1"></li>
+            <li data-target="#safariCarousel" data-slide-to="2"></li>
+        </ol>
+         <div class="carousel-inner">
+            <div class="carousel-item active safari-slide slide-forest">forest safari</div>
+            <div class="carousel-item safari-slide slide-desert">desert safari</div>
+            <div class="carousel-item safari-slide slide-ocean">ocean safari</div>
+        </div>
+        <a class="carousel-control-perv" href="#safariCarousel" data-slide="perv"
+        <span class="carousel-control-perv-icon"></span></a>
+        <a class="carousel-control-next" href="#safariCarousel" data-slide="next">
+            <span class="carousel-control-next-icon"></span></a>
+</body>
+</html>
