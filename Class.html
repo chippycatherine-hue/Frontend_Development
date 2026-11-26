@@ -1,0 +1,89 @@
+<html>
+    <head>
+        <title>My Planet cards <title>
+            <style>
+                body{
+                    font-family: Arial, sans-serif;
+                    background-color: #f0f8ff;
+                    text-align: center;
+                    padding: 20px;
+                }
+                h1{color: #2e8b57;}
+                p{
+                    font-size: 18px;
+                    color: #333;
+                }
+                .cards{
+                    display: flex;
+                    justify-content: center;
+                    flex-wrap: wrap;
+                    gap: 20px;
+                    margin-top: 20px;
+                }
+                .card{
+                    width: 200px;
+                    border: 2px solid #2e8b57;
+                    border-radius: 10px;
+                    padding: 20px;
+                    background-color: #ffffff;
+                }
+                .planet-name{
+                    font-size: 20px;
+                    font-weight: bold;
+                    color: #2e8b57;
+                }
+                .planet-fact{
+                    font-size: 16px;
+                    color: #555;
+                }
+                button{
+                    background-color: #2e8b57;
+                    color: white;
+                    border: none;
+                    border-radius: 5px;
+                    padding: 10px 20px;
+                    cursor: pointer;
+                }
+            </style>
+    </head>
+    <body>
+        <h1>My Planet Cards</h1>
+        <p> Use a javascript class to build planet cards </p>
+        <button onclick="showPlanets()">Show Planets</button>
+        <div class ="cards">
+        <div id="card1"></div>
+        <div id="card2"></div>
+        <div id="card3"></div>
+        </div>
+        <script>
+            class Planet{
+                constructor(name, fact){
+                    this.name = name;
+                    this.fact = fact;
+                }
+                describe(){
+                    return `Planet: ${this.name} - Fact: ${this.fact}`;
+                }
+            }
+
+            function showPlanets(){
+                let p1= new Planet("Earth", "Only planet known to support life.");
+                let p2= new Planet("Mars", "Known as the Red Planet.");
+                let p3= new Planet("Jupiter", "Largest planet in the solar system.");
+
+                document.getElementById("card1").innerHTML =
+                "<div class='card'><div class='planet-name'>" + p1.name + "</div><div class='planet-fact'>" + p1.fact + "</div></div>";
+                 "<div class='planet-fact'>" + p1.fact + "</div></div>";
+
+                document.getElementById("card2").innerHTML =
+                "<div class='card'><div class='planet-name'>" + p2.name + "</div><div class='planet-"fact'>" + p2.fact + "</div></div>";
+                "<div class='planet-fact'>" + p2.fact + "</div></div>";
+
+                document.getElementById("card3").innerHTML =
+                "<div class='card'><div class='planet-name'>" + p3.name + "</div><div class='planet-fact'>" + p3.fact + "</div></div>";
+                "<div class='planet-fact'>" + p3.fact + "</div></div>";
+
+            }
+        </script>
+    </body>
+</html>
